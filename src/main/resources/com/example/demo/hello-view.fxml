@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Label layoutX="40.0" layoutY="54.0" text="Function: " />
+         <Label fx:id="labelFunction" layoutX="158.0" layoutY="54.0" />
+         <Label layoutX="31.0" layoutY="130.0" text="IntegralSum:" />
+         <Label fx:id="labelIntegralSum" layoutX="158.0" layoutY="130.0" />
+         <Label layoutX="51.0" layoutY="210.0" text="Time: " />
+         <Label fx:id="labelTime" layoutX="144.0" layoutY="210.0" />
+      </AnchorPane>
+   </center>
+   <top>
+      <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <Label text="a:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="aField" prefHeight="26.0" prefWidth="60.0">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+         </TextField>
+         <Label text="b:">
+            <HBox.margin>
+               <Insets left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="bField" prefHeight="26.0" prefWidth="60.0">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+         </TextField>
+         <Label text="step">
+            <HBox.margin>
+               <Insets left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="stepField" prefHeight="26.0" prefWidth="60.0">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+         </TextField>
+         <Label text="nThreads">
+            <HBox.margin>
+               <Insets left="10.0" right="10.0" top="10.0" />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="nThreadsField" prefHeight="26.0" prefWidth="60.0">
+            <HBox.margin>
+               <Insets top="10.0" />
+            </HBox.margin>
+         </TextField>
+         <Button mnemonicParsing="false" onAction="#onCalculateClicked" text="Calculate">
+            <HBox.margin>
+               <Insets left="20.0" top="10.0" />
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </top>
+</BorderPane>
