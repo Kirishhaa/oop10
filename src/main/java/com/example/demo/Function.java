@@ -21,7 +21,7 @@ public class Function {
     public double calculateTrapezia(){
         double v1 = f.applyAsDouble(a);
         double v2 = f.applyAsDouble(b);
-        return ((v1+v2)/2*step+IntStream.rangeClosed(1, nSteps).mapToDouble(it -> a+it*step).map(f).map(y -> y*step).sum());
+        return ((v1+v2)/2*step+IntStream.range(1, nSteps).mapToDouble(it -> a+it*step).map(f).map(y -> y*step).sum());
     }
 
 }
